@@ -1,0 +1,31 @@
+<mat-toolbar color="primary">
+    <span>Menú</span>
+</mat-toolbar>
+<div class="menu-container">
+    <button mat-raised-button color="primary" (click)="goInstances()">
+        <div>
+            <mat-icon>computer</mat-icon>
+        </div>
+        <div>Instancias</div>
+    </button>
+    <button *ngIf="(session | async ) && (session | async ).type=='ADMIN'" mat-raised-button color="primary"
+        (click)="goPermissions()">
+        <div>
+            <mat-icon>group</mat-icon>
+        </div>
+        <div>Usuarios</div>
+    </button>
+    <button *ngIf="(session | async ) && (session | async ).type=='ADMIN'" mat-raised-button color="primary"
+        (click)="downloadUsers()">
+        <div>
+            <mat-icon>download</mat-icon>
+        </div>
+        <div>Descargar Usuarios</div>
+    </button>
+    <button mat-raised-button color="primary" (click)="goExit()">
+        <div>
+            <mat-icon>logout</mat-icon>
+        </div>
+        <div>Salir</div>
+    </button>
+</div>

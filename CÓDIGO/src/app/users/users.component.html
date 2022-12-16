@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button (click)="back()">
+        <mat-icon>arrow_back</mat-icon>
+    </button>
+    <span>Usuarios</span>
+</mat-toolbar>
+<div class="actions">
+    <button mat-raised-button color="primary" (click)="addUser()">Agregar</button>
+</div>
+<div class="container">
+
+    <mat-card *ngFor="let u of users" class="card">
+        <mat-card-header>
+            <mat-card-title>Usuario: {{u.name}}</mat-card-title>
+            <mat-card-subtitle>Tipo: {{u.type}}</mat-card-subtitle>
+        </mat-card-header>
+        <!-- <mat-card-content>
+         
+        </mat-card-content> -->
+        <mat-card-actions>
+            <!-- <button mat-raised-button>text</button> -->
+            <button mat-raised-button color="primary" (click)="updateUser(u)">Editar</button>
+            <button mat-raised-button color="warn" *ngIf="(session|async) && (session|async).id !=u.id"
+                (click)="deleteUser(u)">Eliminar</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

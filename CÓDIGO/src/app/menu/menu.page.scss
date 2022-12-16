@@ -1,0 +1,25 @@
+:host {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+
+    .menu-container {
+        flex: 1;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            margin: 10px;
+            width: 200px;
+            height: 100px;
+        }
+
+    }
+
+}

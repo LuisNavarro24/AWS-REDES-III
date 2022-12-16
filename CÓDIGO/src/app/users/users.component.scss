@@ -1,0 +1,29 @@
+:host {
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+
+    .actions {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 2px;
+        box-sizing: border-box;
+    }
+
+    .container {
+        overflow: auto;
+        justify-content: center;
+        flex: 1;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+
+        .card {
+            margin: 1px;
+            min-width: 300px;
+        }
+    }
+}

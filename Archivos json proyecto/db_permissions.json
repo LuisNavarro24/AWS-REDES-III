@@ -1,0 +1,23 @@
+{
+  "permissions": [
+    {
+      "instanceID": "13333",
+      "userId": "2"
+    },
+    {
+      "instanceID": "1dddddd33ffdggdfsfdss33",
+      "userId": "2ddd"
+    },
+    {
+      "instanceId": "1dddddd33ffdggdfsfdss33",
+      "userId": "2ddd"
+    },
+    {
+      "instanceId": "1dddddd33ffdggdfsfdddss33",
+      "userId": "2ddd",
+      "canList": true,
+      "canStop": true,
+      "cantStart": true
+    }
+  ]
+}

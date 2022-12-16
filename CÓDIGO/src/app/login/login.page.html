@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+
+    <span>UTPS</span>
+</mat-toolbar>
+<div class="container">
+    <mat-card>
+        <mat-card-header class="center">
+            <mat-card-title>Iniciar Sesión</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="card-content">
+
+            <mat-form-field appearance="outline">
+                <input matInput placeholder="Usuario" [(ngModel)]="credential.name">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <input type="password" matInput placeholder="Contraseña" [(ngModel)]="credential.password">
+            </mat-form-field>
+            <div class="error" [hidden]="!error">
+                {{error }}
+            </div>
+        </mat-card-content>
+        <mat-card-actions class="center actions">
+            <button mat-raised-button color="primary" (click)="login()">Entrar</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

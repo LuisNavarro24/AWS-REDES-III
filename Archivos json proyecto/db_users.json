@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "c54ef679-e1a2-4bcd-8cf7-0b6036323253",
+      "name": "kevin",
+      "password": "1234",
+      "type": "ADMIN"
+    },
+    {
+      "id": "f2296d47-beab-4227-8541-3bdea14196e9",
+      "name": "Director",
+      "password": "1234",
+      "type": "ADMIN"
+    },
+    {
+      "id": "bc78a002-8d2b-4dff-ae31-94b362b07887",
+      "name": "invitado",
+      "password": "1234",
+      "type": "USER"
+    },
+    {
+      "id": "5a251877-17d1-4cb0-abaa-45fc07d66e79",
+      "name": "Profe",
+      "password": "12345",
+      "type": "ADMIN"
+    }
+  ]
+}

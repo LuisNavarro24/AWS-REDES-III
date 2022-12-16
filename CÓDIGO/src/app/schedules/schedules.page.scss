@@ -1,0 +1,35 @@
+:host {
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+
+    .action-container {
+        display: flex;
+        justify-content: flex-end;
+        flex: 0 0 auto;
+
+        button {
+            margin: 10px;
+        }
+    }
+
+    .container {
+        overflow: auto;
+        display: flex;
+        flex-flow: row wrap;
+        flex: 1;
+        // background-color: red;
+        color: black;
+        align-items: flex-start;
+        align-content: flex-start;
+        justify-content: center;
+
+        >* {
+            margin: 10px;
+        }
+
+        .task {
+            min-width: 300px;
+        }
+    }
+}

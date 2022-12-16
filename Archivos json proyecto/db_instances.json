@@ -1,0 +1,39 @@
+{
+  "instances": [
+    {
+      "instanceId": "i-00780850d79c19900",
+      "instanceType": "t3a.large",
+      "platform": "windows",
+      "publicIpAddress": "3.88.83.234",
+      "state": "running",
+      "name": "CAMION",
+      "securityGroup": "SG-CAMION"
+    },
+    {
+      "instanceId": "i-09dea164a6f2c9d5f",
+      "instanceType": "t2.micro",
+      "platform": "linux",
+      "publicIpAddress": "23.22.107.190",
+      "state": "running",
+      "name": "PROYECTO FINAL LINUX",
+      "securityGroup": "launch-wizard-1"
+    },
+    {
+      "instanceId": "i-01eedc910aa195454",
+      "instanceType": "t2.micro",
+      "platform": "linux",
+      "publicIpAddress": "3.229.212.243",
+      "state": "running",
+      "name": "PROYECTO FINAL LINUX",
+      "securityGroup": "launch-wizard-1"
+    },
+    {
+      "instanceId": "i-099d68a7c21402bbe",
+      "instanceType": "t2.micro",
+      "platform": "linux",
+      "state": "stopped",
+      "name": "pruebas",
+      "securityGroup": "launch-wizard-2"
+    }
+  ]
+}

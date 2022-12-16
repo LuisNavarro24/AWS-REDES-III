@@ -1,0 +1,7 @@
+{
+  "name": "utps",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

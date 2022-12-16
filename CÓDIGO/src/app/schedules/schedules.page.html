@@ -1,0 +1,34 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button (click)="back()">
+        <mat-icon>arrow_back</mat-icon>
+    </button>
+    <span>Horarios {{instanceId}}</span>
+</mat-toolbar>
+
+<div class="action-container">
+    <button mat-raised-button (click)="create()" color="primary">Crear Tarea</button>
+</div>
+<div class="container">
+    <!-- {{tasks|json}} -->
+    <div class="task" *ngFor="let t of tasks">
+
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>{{t.name}}</mat-card-title>
+                <mat-card-subtitle>{{t.type == false ? 'Apagado':'Encendido'}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <div>{{t.hour}}:{{t.minute}}</div>
+                <div>{{t.days}}</div>
+
+            </mat-card-content>
+            <mat-card-actions>
+                <!-- <button mat-raised-button color="primary" (click)="update(t)">Editar</button> -->
+                <button mat-raised-button color="accent" (click)="delete(t)">Eliminar</button>
+            </mat-card-actions>
+        </mat-card>
+
+
+
+    </div>
+</div>

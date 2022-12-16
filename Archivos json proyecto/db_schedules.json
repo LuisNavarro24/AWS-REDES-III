@@ -1,0 +1,11 @@
+{
+  "schedules": [
+    {
+      "scheduleId": "b90f3156-e2c8-4cc4-b046-af6850d35e18",
+      "cron": "0 00 20 * * FRI",
+      "instanceId": "i-099d68a7c21402bbe",
+      "type": false,
+      "name": "Tarea"
+    }
+  ]
+}

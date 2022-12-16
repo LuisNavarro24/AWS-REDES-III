@@ -1,0 +1,50 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button (click)="back()">
+        <mat-icon>arrow_back</mat-icon>
+    </button>
+    <span>Instancias</span>
+</mat-toolbar>
+<div class="instances-container">
+    <mat-card class="instance" *ngFor="let i of instances">
+        <mat-card-header>
+            <mat-card-title>ID:{{i.instanceId}}</mat-card-title>
+            <mat-card-subtitle>Estado: {{i.state}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <div>Nombre: {{i.name}}</div>
+            <div>Tipo: {{i.instanceType}}</div>
+            <div>Plataforma: {{i.platform}}</div>
+            <div>IP: {{i.publicIpAddress}}</div>
+            <div>Grupo Seguridad: {{i.securityGroup}}</div>
+        </mat-card-content>
+        <mat-card-actions>
+            <button *ngIf="i.state == 'stopped'" mat-mini-fab color="accent" (click)="start(i)">
+                <mat-icon>play_arrow</mat-icon>
+            </button>
+            <button [hidden]="i.state != 'running'" mat-mini-fab color="accent" (click)="stop(i)">
+                <mat-icon>stop</mat-icon>
+            </button>
+            <button mat-mini-fab color="primary" (click)="downloadExcell(i)">
+                <mat-icon>bar_chart</mat-icon>
+            </button>
+
+            <button mat-mini-fab color="primary" (click)="schedules(i)">
+                <mat-icon>schedule</mat-icon>
+            </button>
+        </mat-card-actions>
+    </mat-card>
+    <!-- <div class="instance" >
+        <div class="instance-header">
+            <span>
+                
+            </span>
+            <input  class="btn start-btn" type="button" value="Encender" (click)="start(i)">
+            <input class="btn stop-btn" type="button" value="Apagar" (click)="stop(i)">
+
+        </div>
+        
+    </div> -->
+</div>
+<div class="chart-container">
+    <canvas id="MyChart" width="1000px" height="750px" style="visibility: hidden;"></canvas>
+</div>
